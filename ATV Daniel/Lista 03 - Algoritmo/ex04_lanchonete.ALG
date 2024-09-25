@@ -12,63 +12,61 @@ Var
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    Escreval("******* 1º PRODUTO ***********************************************")
-   Escreva("nforme o código do 1º produto desejado conforme o cardápio: ")
+   Escreva("Informe o código do 1º produto desejado conforme o cardápio: ")
    Leia(cod1)
    Se (cod1 < 200) ou (cod1 > 204) Então
       Escreva("Código inválido do 1º produto. Informe um código entre 200 e 204!: ")
-      Leia(quant1)
-   SeNão
-      Escreva("Informe a Quantidade desejada do 1º produto: ")
-      Leia(quant1)
+      Leia(cod1)
    FimSe
+   Escreva("Informe a Quantidade desejada do 1º produto: ")
+   Leia(quant1)
    Escreval("")
 
    Escreval("******* 2º PRODUTO ***********************************************")
-   Escreva("nforme o código do 2º produto desejado conforme o cardápio: ")
+   Escreva("Informe o código do 2º produto desejado conforme o cardápio: ")
    Leia(cod2)
    Se (cod2 < 200) ou (cod2 > 204) Então
-      Escreva("Informe a Quantidade desejada do 2º produto: ")
-      Leia(quant2)
-   SeNão
       Escreva("Código inválido do 2º produto. Informe um código entre 200 e 204!: ")
-      Leia(quant2)
+      Leia(cod2)
    FimSe
+   Escreva("Informe a Quantidade desejada do 2º produto: ")
+   Leia(quant2)
 
    Se (cod1 = 200) Então
-      total = total + 15.90 * quant1
+      total := total + 15.90 * quant1
    SeNão
       Se (cod1 = 201) Então
-         total = total + 8 * quant1
+         total := total + 8 * quant1
       Senão
          Se (cod1 = 202) Então
-            total = total + 5 * quant1
+            total := total + 5 * quant1
          Senão
-            Se (cod1 = 204) Então
-               total = total + 12.50 * quant1
+            Se (cod1 = 203) Então
+               total := total + 12.50 * quant1
             Senão
                Se (cod1 = 204) Então
-                  total = total + 7.90 * quant1
+                  total := total + 7.90 * quant1
 
                FimSe
             FimSe
          FimSe
       FimSe
    FimSe
-   
-   Se (cod1 = 200) Então
-      total = total + 15.90 * quant1
+
+   Se (cod2 = 200) Então
+      total := total + 15.90 * quant2
    SeNão
       Se (cod2 = 201) Então
-         total = total + 8 * quant2
+         total := total + 8 * quant2
       Senão
          Se (cod2 = 202) Então
-            total = total + 5 * quant2
+            total := total + 5 * quant2
          Senão
-            Se (cod2 = 204) Então
-               total = total + 12.50 * quant2
+            Se (cod2 = 203) Então
+               total := total + 12.50 * quant2
             Senão
                Se (cod2 = 204) Então
-                  total = total + 7.90 * quant2
+                  total := total + 7.90 * quant2
 
                FimSe
             FimSe
