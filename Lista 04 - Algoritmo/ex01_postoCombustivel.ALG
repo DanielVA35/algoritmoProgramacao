@@ -1,4 +1,6 @@
 Algoritmo "semnome"
+//  
+//  
 //
 //
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -16,7 +18,7 @@ Inicio
    Escreva("Informe o tipo de combustível (G - Gasolina; A - Alcool): ")
    Leia(tipoComb)
 
-   Se(tipoComb = "A") Então //Alcool 2,90
+   Se(tipoComb = "A") ou (tipoComb = "a") Então //Alcool 2,90
       Se(ltrs <= 20) Então
          //Desconto 3%
          total :=  (ltrs * 2.9) * 0.97
